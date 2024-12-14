@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../Genshin_API/img/icon.png">
+    <script src="https://kit.fontawesome.com/4dd764bfea.js" crossorigin="anonymous"></script>
+    <title>Genshin_API</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <h1>Genshin API</h1>
+
+            <!--Responsive Header-->
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="nav-list">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <li class="nav-item"><button class="btn btn-header all_elements" id="all"><img class="element-img"
+                            src="https://icons.veryicon.com/png/o/miscellaneous/office-4/bullet-list.png" alt="All">
+                        All</button></li>
+                <li class="nav-item"><button class="btn btn-header pyro" id="pyro"> <img class="element-img"
+                            src="../Genshin_API/img/elements/pyro.webp" alt="Pyro">pyro</button></li>
+                <li class="nav-item"><button class="btn btn-header hydro" id="hydro"> <img class="element-img"
+                            src="../Genshin_API/img/elements/hydro.webp" alt="Hydro">hydro</button></li>
+                <li class="nav-item"><button class="btn btn-header anemo" id="anemo"><img class="element-img"
+                            src="../Genshin_API/img/elements/anemo.webp" alt="Anemo">
+                        Anemo</button></li>
+                <li class="nav-item"><button class="btn btn-header cryo" id="cryo"><img class="element-img"
+                            src="../Genshin_API/img/elements/cryo.webp" alt="Cryo">cryo</button></li>
+
+                <li class="nav-item"><button class="btn btn-header dendro" id="dendro"> <img class="element-img"
+                            src="../Genshin_API/img/elements/dendro.webp" alt="Dendro">dendro</button></li>
+
+                <li class="nav-item"><button class="btn btn-header geo" id="geo"><img class="element-img"
+                            src="../Genshin_API/img/elements/geo.webp" alt="Geo">geo</button>
+                </li>
+                <li class="nav-item"><button class="btn btn-header electro" id="electro"> <img class="element-img"
+                            src="../Genshin_API/img/elements/electro.webp" alt="Electro">electro</button></li>
+
+            </ul>
+
+            
+        </nav>
+    </header>
+    <main>
+        <div class="all">
+            <div class="character-all" id="listCharacter">
+                <!-- <div class="character">
+                    <p class="character-id-back">#001</p>
+                    <div class="character-img"><img
+                            src="https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Amber_Card.png/revision/latest/scale-to-width-down/1000?cb=20220725204839"
+                            alt="Amber"></div>
+                    <div class="character-info">
+
+                        <div class="name-container">
+                            <p class="character-id">#001</p>
+                            <h2 class="character-name">Amber</h2>
+                        </div>
+                        
+                        <div class="element-info">
+                            <div class="info-btn pyro">
+                                <img class="element-img"
+                                src="https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Element_Pyro.png/revision/latest?cb=20201116063114"
+                                alt="Pyro">
+                                <p class="character-element">Pyro</p>
+                            </div>
+                            <p class="character-weapon info-btn">Bow</p>
+                            <p class="character-rarity info-btn">4stars</p>
+                        </div>
+
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>
