@@ -32,6 +32,8 @@ function showCharacter(character) {
     }
 
     const visionLowerCase = vision.toLowerCase();
+    const characterImageSrc = `../Genshin_API/img/characters/${name.toLowerCase()}.webp`; // Usar name en minúsculas
+    const elementImageSrc = `../Genshin_API/img/elements/${vision.toLowerCase()}.png`; // Usar vision en minúsculas
 
     const div = document.createElement("div");
     div.classList.add("character");
@@ -39,7 +41,7 @@ function showCharacter(character) {
     div.innerHTML = `
         <p class="character-id-back">#${id}</p>
         <div class="character-img">
-            <img src="../Genshin_API/img/characters/${name}.webp" alt="${name}">
+            <img src="${characterImageSrc}" alt="${name}">
         </div>
         <div class="character-info">
             <div class="name-container">
@@ -48,7 +50,7 @@ function showCharacter(character) {
             </div>
             <div class="element-info">
                 <div class="info-btn ${visionLowerCase}">
-                    <img class="element-img" src="../Genshin_API/img/elements/${vision}.webp" alt="${vision}">
+                    <img class="element-img" src="${elementImageSrc}" alt="${vision}">
                     <p class="character-element">${vision}</p>
                 </div>
                 <p class="character-weapon info-btn">${weapon}</p>
@@ -59,6 +61,7 @@ function showCharacter(character) {
 
     listCharacter.append(div);
 }
+
 
 // Función para mostrar personajes filtrados por visión
 function showCharacterByElement(event) {
