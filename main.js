@@ -32,8 +32,8 @@ function showCharacter(character) {
     }
 
     const visionLowerCase = vision.toLowerCase();
-    const characterImageSrc = `../Genshin_API/img/characters/${name.toLowerCase()}.webp`; // Usar name en minúsculas
-    const elementImageSrc = `../Genshin_API/img/elements/${vision.toLowerCase()}.png`; // Usar vision en minúsculas
+    const characterImageSrc = `/img/characters/${name.toLowerCase()}.webp`; // Usar name en minúsculas
+    const elementImageSrc = `/img/elements/${vision.toLowerCase()}.png`; // Usar vision en minúsculas
 
     const div = document.createElement("div");
     div.classList.add("character");
